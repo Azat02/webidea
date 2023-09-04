@@ -1,11 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import EmployerList from "./components/employerList/EmployerList";
+import Insert from "./components/insert/Insert";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="wrapper">
+      <Insert />
+      <EmployerList />
     </div>
   );
 }

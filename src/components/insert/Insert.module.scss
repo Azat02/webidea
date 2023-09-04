@@ -1,0 +1,51 @@
+fieldset {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.input_number {
+    width: 200px;
+}
+
+.switch {
+    width: 35px;
+}
+
+.switch_wrapper {
+    display: flex;
+    gap: 13px;
+    align-items: flex-end;
+}
+
+
+.darkBtn {
+    background: #000;
+    color: white
+}
+
+.dark_color {
+    color: rgb(219, 216, 216);
+}
+
+.dark_input {
+    color: rgb(126, 124, 124);
+    background: #181818;
+    border-color: rgb(126, 124, 124);
+
+    &::placeholder {
+        color: rgb(219, 216, 216);
+    }
+}
+
+.dark_inputNumber {
+    @extend .dark_input;
+    @extend .input_number;
+
+    &::placeholder {
+        color: rgb(219, 216, 216);
+    }
+}
